@@ -13,7 +13,9 @@ ROCAM builds on the ideas I have developed previously in my JMIR mHealth 2020 pa
 Run the file 'demo_acceleration_summary_measures.m'
 
 ****************************************
+For some of the functions, such as compute_PA_levels, the current version of the code relies on data sampled (or resampled) at 10Hz. If you want to use a different sample rate, you will need to adapt the thresholds following my paper in Sensors (2022).
 
+****************************************
 Copyright (c) Athanasios Tsanas, 2022
 
 **If you use this program please cite:**

@@ -13,4 +13,12 @@ seconds_summarized = 60; % get overall estimates every 60 seconds, i.e. have min
 % contains the four acceleration summary measures used in my paper
 
 
+%% For the following we will need to have a large data file (the one provided is small for illustration of the above and will not work for the code below)
+% if we have the timing for the entries, this needs to be included here;
+% otherwise will presume we have full days from the first sample and remove
+% samples at the end
+% % data_compact.time = 739001:1/1440:(739001+15/1440) % minute-wise timing
 
+%% Note that internally in the function below I use thresholds for data sampled at 10Hz; the code will need to be adapted if processing data at a different sample rate
+% function to compute diurnal measures from the compact data representation
+[diurnal_measures] = compute_diurnal_measures(data_compact);
